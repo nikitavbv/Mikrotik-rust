@@ -2,6 +2,8 @@ Router Os
 ================
 Mikrotik API for Rust
 
+**This is a fork of [Mikrotik-rust crate by woowe](https://github.com/woowe/Mikrotik-rust). login has been fixed to work post-v6.43: [Mikrotik API links](https://wiki.mikrotik.com/wiki/Manual:API#Initial_login)**
+
 This API gives you the ability to connect to your mikrotik router over a tcp connection.
 
 [![Build Status](https://travis-ci.org/Wooowe/Mikrotik-rust.svg?branch=master)](https://travis-ci.org/Wooowe/Mikrotik-rust) [![Latest Version](https://img.shields.io/badge/crates.io-0.0.21-orange.svg)](https://crates.io/crates/routeros_rust)

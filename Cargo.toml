@@ -19,4 +19,4 @@ name = "example"
 path = "example.rs"
 
 [dependencies]
-rust-crypto = "0.2.31"
+gcc = "0.3.55"
