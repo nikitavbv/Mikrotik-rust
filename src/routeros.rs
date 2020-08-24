@@ -26,15 +26,15 @@ fn hex_binascii<'a>(hexstr: String) -> Result<Vec<u8>, &'a str> {
 }
 
 
-pub struct ApiRos<'a> {
-	stream: &'a mut TcpStream,
+pub struct ApiRos {
+	stream: TcpStream,
 }
 
-impl<'a> ApiRos<'a> {
+impl ApiRos {
 
-	pub fn new(s: &'a mut TcpStream) -> ApiRos<'a> {
+	pub fn new(stream: TcpStream) -> ApiRos {
 		ApiRos {
-			stream: s
+			stream
 		}
 	}
 

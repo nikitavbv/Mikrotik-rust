@@ -18,9 +18,8 @@ fn get_line() -> String {
 }
 
 fn main() {
-	let mut stream = TcpStream::connect("192.168.1.1:8728").unwrap();
-
-	let mut apiros = ApiRos::new(&mut stream);
+	let stream = TcpStream::connect("192.168.1.1:8728").unwrap();
+	let mut apiros = ApiRos::new(stream);
 	apiros.login("username".to_string(), "password".to_string());
 
 	let mut input_sentence: Vec<String> = Vec::new();
