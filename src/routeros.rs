@@ -1,5 +1,6 @@
 #![crate_name = "router_os"]
 #![crate_type = "lib"]
+#[macro_use] extern crate log;
 
 use std::collections::BTreeMap;
 use std::io::prelude::*;
@@ -169,6 +170,7 @@ impl ApiRos {
 
 		loop {
 			let i: Vec<String> = self.read_sentence();
+			trace!("response sentence: {:?}", i);
 			if i.len() == 0 {
 				continue;
 			}
